@@ -1,0 +1,35 @@
+.MMM-SmartWater .symbol {
+  margin-right: 15px;
+}
+
+.MMM-SmartWater .distance {
+  margin: 0;
+}
+
+.MMM-SmartWater .level {
+  margin-left: 15px;
+}
+
+/*
+.MMM-SmartWater .ok-level {
+  color: #5cbc82;
+}
+*/
+
+.MMM-SmartWater .warning-level {
+  color: #ffcf42;
+}
+
+.MMM-SmartWater .alert-level {
+  color: #b3090c;
+} 
+
+.MMM-SmartWater .more {
+  margin: 0;
+}
+
+.MMM-SmartWater .more span.fa {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
