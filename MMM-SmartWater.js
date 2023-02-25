@@ -111,7 +111,9 @@ Module.register('MMM-SmartWater', {
   socketNotificationReceived(notificationName, payload) {
     if (notificationName === 'MMM-SmartWater.VALUE_RECEIVED' && payload) {
       if (!this.config.sensorId || (this.config.sensorId && this.config.sensorId === payload.sensorId)) {
-        const lastDistanceInCm = this.viewModel?.currentDistanceInCm || null;
+        const lastDistanceInCm = this.viewModel && this.viewModel.currentDistanceInCm
+          ? this.viewModel.currentDistanceInCm
+          : null;
 
         this.viewModel = {
           currentDistanceInCm: payload.distanceInCm,
